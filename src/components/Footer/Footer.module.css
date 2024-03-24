@@ -25,7 +25,6 @@
     transition: opacity .3s;
     text-decoration: none;
     position: relative;
-    z-index: 202;
     margin: 0 0 1.5rem;
     background: url(/logo-gray.png) no-repeat 0/auto 2rem;
 }

@@ -75,3 +75,66 @@
     flex: 0 0 auto;
     width: 100%
 }
+
+
+.g, .gy {
+    --gutter-y: 1.5rem
+}
+
+.g {
+    --gutter-x: 1.5rem
+}
+
+.g-0 {
+    --gutter-x: 0rem
+}
+
+.g-0, .gy-0 {
+    --gutter-y: 0rem
+}
+
+.g-2, .gx-2 {
+    --gutter-x: 0.5rem
+}
+
+.g-2 {
+    --gutter-y: 0.5rem
+}
+
+.g-3, .gx-3 {
+    --gutter-x: 1rem
+}
+
+.g-3 {
+    --gutter-y: 1rem
+}
+
+.g-4, .gx-4 {
+    --gutter-x: 1.5rem
+}
+
+.g-4 {
+    --gutter-y: 1.5rem
+}
+
+.g-5, .gx-5 {
+    --gutter-x: 2rem
+}
+
+.g-5 {
+    --gutter-y: 2rem
+}
+
+.g-6 {
+    --gutter-x: 4rem;
+    --gutter-y: 4rem
+}
+
+.g-7 {
+    --gutter-x: 6.5rem;
+    --gutter-y: 6.5rem
+}
+
+.gx-8 {
+    --gutter-x: 10.5rem
+}

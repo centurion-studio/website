@@ -8,6 +8,7 @@ import './styles/margins.css'
 import './styles/paddings.css';
 
 import './styles/components/to-top-btn.css';
+import './styles/components/tooltip.css';
 import './styles/components/navbar.css';
 import './styles/components/btn.css';
 

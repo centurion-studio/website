@@ -142,11 +142,12 @@ html {
 
 
 [data-scheme=dark] {
+    --t: rgb(41, 46, 56);
     --color-primary-darken-rgb: 0, 71, 141;
     --color-primary-darken: rgb(var(--color-primary-darken-rgb));
     --color-bg-rgb: 35, 39, 47;
     --color-bg: rgb(var(--color-bg-rgb));
-    --color-bg-secondary-rgb: 29, 36, 52;
+    --color-bg-secondary-rgb: 38, 42, 49;
     --color-bg-secondary: rgb(var(--color-bg-secondary-rgb));
     --color-muted-rgb: 255, 255, 255;
     --color-muted: rgb(var(--color-muted-rgb));
@@ -285,6 +286,21 @@ a:hover {
     .header-sticky {
         background-color: color-mix(in srgb, var(--color-bg), transparent 10%)
     }
+}
+
+.img-light, .img-dark {
+    display: block;
+    border-radius: .2rem;
+    border: 1px solid rgba(41, 46, 50, 0.22);
+}
+
+
+[data-scheme=dark] .img-light {
+    display: none !important
+}
+
+[data-scheme=light] .img-dark {
+    display: none !important
 }
 
 

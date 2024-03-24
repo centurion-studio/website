@@ -102,7 +102,7 @@ export const Footer = (): React.JSX.Element => {
                 </div>
             </div>
             <div className="footer">
-                <div className="py-4" style={{textAlign: 'center', fontSize: '0.8rem'}}>
+                <div className="py-3" style={{textAlign: 'center', fontSize: '0.8rem'}}>
                     <div className="lg:col">
                         Made with {' '}
                         <IconHeartFilled style={{width: 18, color: 'rgb(224, 49, 49)', paddingTop: 10}}/>

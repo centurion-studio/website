@@ -1,5 +1,10 @@
+import {Hero} from './componets/Hero/Hero';
 import React from 'react';
 
 export const LandingPage = (): React.JSX.Element => {
-    return (<h1 style={{textAlign: 'center'}}>HOME PAGE</h1>);
+    return (
+        <React.Fragment>
+            <Hero/>
+        </React.Fragment>
+    );
 }
