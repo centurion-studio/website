@@ -43,16 +43,16 @@ export const Header = (): React.JSX.Element => {
     return (
         <header id="header" className={classes.header}>
             <div className={classes.container}>
-                <nav className="row" style={{alignItems: 'center'}}>
-                    <div className="col-auto mr-auto">
+                <nav className="row" style={{display: 'flex', alignItems: 'center'}}>
+                    <div className="col-auto">
                         <div style={{display: 'flex', alignItems: 'center'}}>
                             <a className={classes.logo} aria-label="Centurion Studio" href="/"></a>
                             <Badge/>
                         </div>
                     </div>
-                    <div className="col-auto mx-auto">
+                    <div className="col-auto" style={{flexGrow: 1}}>
                         <nav className={`navbar ${open ? 'opened' : ''}`}>
-                            <div className="navbar-menu">
+                            <div className="navbar-menu ml-auto">
                                 <NavLink to="/about" onClick={()=>{
                                     setOpen(false);
                                 }} className={({isActive}): string => {
@@ -73,6 +73,16 @@ export const Header = (): React.JSX.Element => {
                                     Documentation
                                 </NavLink>
                             </div>
+                            <div style={{display: 'flex', alignItems: 'center'}} className="ml-auto">
+                                <button className={classes.btn} style={{boxShadow: 'none'}} onClick={toggleScheme}>
+                                    {scheme === 'light' ? <IconMoon/> : <IconSun/>}
+                                </button>
+                                <a href="https://github.com/sponsors/cosmifcozma" className="btn ml-3" target="_blank"
+                                   rel="noopener noreferrer">
+                                    <IconHeartFilled style={{color: '#e03131'}}/>
+                                    <span className="btn-text">Sponsor project</span>
+                                </a>
+                            </div>
                         </nav>
                         <button onClick={(): void => setOpen((open: boolean): boolean => !open)}
                                 className={`navbar-toggle ${open ? 'opened' : ''}`}
@@ -84,18 +94,6 @@ export const Header = (): React.JSX.Element => {
                             <span></span>
                         </button>
                         <div className={`navbar-backdrop ${open ? 'opened' : ''}`}></div>
-                    </div>
-                    <div className="col-auto ml-auto">
-                        <div style={{display: 'flex', alignItems: 'center'}}>
-                            <button className="btn mr-1" style={{boxShadow: 'none'}} onClick={toggleScheme}>
-                                {scheme === 'light' ? <IconMoon/> : <IconSun/>}
-                            </button>
-                            <a href="https://github.com/sponsors/cosmifcozma" className="btn ml-2" target="_blank"
-                               rel="noopener noreferrer">
-                                <IconHeartFilled style={{color: '#e03131'}}/>
-                                <span className="btn-text">Sponsor project</span>
-                            </a>
-                        </div>
                     </div>
                 </nav>
             </div>

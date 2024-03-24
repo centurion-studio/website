@@ -63,7 +63,7 @@ html {
 }
 
 [data-scheme=light], html {
-    --color-primary-darken-rgb: 0, 58, 115;
+    --color-primary-darken-rgb: 48, 118, 159;
     --color-primary-darken: rgb(var(--color-primary-darken-rgb));
     --color-red-rgb: 224, 49, 49;
     --color-red: rgb(var(--color-red-rgb));
@@ -142,8 +142,7 @@ html {
 
 
 [data-scheme=dark] {
-    --t: rgb(41, 46, 56);
-    --color-primary-darken-rgb: 0, 71, 141;
+    --color-primary-darken-rgb: 48, 118, 159;
     --color-primary-darken: rgb(var(--color-primary-darken-rgb));
     --color-bg-rgb: 35, 39, 47;
     --color-bg: rgb(var(--color-bg-rgb));

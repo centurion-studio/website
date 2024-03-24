@@ -52,6 +52,64 @@
     left: 6rem
 }
 
+.btn {
+
+    --btn-border-color: var(--color-border);
+    --btn-padding-x: .75rem;
+    --btn-text-padding-x: 0.5rem;
+    --btn-hover-bg: var(--btn-bg);
+    --btn-hover-border-color: var(--color-border-hover);
+    --btn-focus-color: rgba(59, 69, 78, .3);
+    --btn-height: 2.5rem;
+    --btn-radius: 0.3rem;
+    --btn-icon-size: 1rem;
+    --btn-font-size: 0.875rem;
+    background: transparent;
+    color: var(--btn-text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: var(--btn-radius);
+    text-decoration: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: var(--btn-font-size);
+    height: var(--btn-height);
+    min-width: var(--btn-height);
+    padding: 0 calc(var(--btn-padding-x) - 1px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, .04), 0 4px 6px -2px rgba(0, 0, 0, .02);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    transition: opacity .3s, transform .3s, border-color .3s, color .3s, background-color .3s;
+    cursor: pointer;
+    white-space: nowrap;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: bottom
+}
+
+.btn.active, .btn:active {
+    --btn-text-color: #fff;
+    --btn-bg: var(--color-primary);
+    --btn-border-color: transparent
+}
+
+.btn:hover {
+    border: 1px solid var(--btn-border-color);
+}
+
+.btn:focus-visible {
+    box-shadow: 0 0 0 3px var(--btn-focus-color);
+    outline: none
+}
+
+.btn .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    stroke-width: 1
+}
+
 [data-scheme=light] .logo {
     background: url(/logo-dark.png) no-repeat 0/auto 2rem;
 }
