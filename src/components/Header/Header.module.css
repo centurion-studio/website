@@ -1,0 +1,61 @@
+.header {
+    height: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    transition: background-color .6s, height .6s, border-color .6s, box-shadow .6s;
+    z-index: 110;
+}
+
+.container {
+    width: 100%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1rem
+}
+
+@media (min-width: 960px) {
+    .container {
+        padding: 0 2rem
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    min-width: 13.5rem;
+    height: 3rem;
+    margin: 0;
+    transition: opacity .3s;
+    text-decoration: none;
+    position: relative;
+    z-index: 202
+}
+
+.logo:hover {
+    opacity: .8
+}
+
+.logo:after {
+    content: attr(data-suffix);
+    position: absolute;
+    text-transform: uppercase;
+    color: #8787a1;
+    font-weight: 500;
+    font-size: 11px;
+    bottom: 0;
+    line-height: 1;
+    left: 6rem
+}
+
+[data-scheme=light] .logo {
+    background: url(/logo-dark.png) no-repeat 0/auto 2rem;
+}
+
+[data-scheme=dark] .logo {
+    background: url(/logo-light.png) no-repeat 0/auto 2rem;
+}

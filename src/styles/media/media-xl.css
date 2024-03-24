@@ -1,0 +1,31 @@
+@media (min-width: 1280px) {
+    .xl\:d-none {
+        display: none !important
+    }
+
+    .xl\:d-inline {
+        display: inline !important
+    }
+
+    .xl\:pr-7 {
+        padding-right: 6.5rem !important
+    }
+
+    .xl\:g-5 {
+        --gutter-x: 2rem;
+        --gutter-y: 2rem
+    }
+
+    .xl\:g-6 {
+        --gutter-x: 4rem;
+        --gutter-y: 4rem
+    }
+
+    .xl\:g-7, .xl\:gx-7 {
+        --gutter-x: 6.5rem
+    }
+
+    .xl\:g-7 {
+        --gutter-y: 6.5rem
+    }
+}

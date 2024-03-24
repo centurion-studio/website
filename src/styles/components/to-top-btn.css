@@ -1,0 +1,33 @@
+.to-top-btn {
+    background: var(--color-primary);
+    color: var(--color-white);
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: .375rem;
+    cursor: pointer;
+    transition: opacity .5s;
+    z-index: 90;
+    opacity: 0;
+    pointer-events: none
+}
+
+.to-top-btn:hover {
+    opacity: 1;
+    color: var(--color-white)
+}
+
+.to-top-btn.visible {
+    opacity: 1;
+    pointer-events: auto
+}
+
+.to-top-btn .icon {
+    width: 1.5rem;
+    height: 1.5rem
+}

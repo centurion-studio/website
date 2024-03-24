@@ -1,0 +1,28 @@
+@media (min-width: 560px) {
+    .sm\:mt-5 {
+        margin-top: 2rem !important
+    }
+
+    .sm\:col {
+        flex: 1 0
+    }
+
+    .sm\:col-auto {
+        flex: 0 0 auto;
+        width: auto
+    }
+
+    .sm\:col-3 {
+        flex: 0 0 auto;
+        width: 25%
+    }
+
+    .sm\:col-6 {
+        flex: 0 0 auto;
+        width: 50%
+    }
+
+    .sm\:gx-6 {
+        --gutter-x: 4rem
+    }
+}

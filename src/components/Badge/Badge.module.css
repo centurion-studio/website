@@ -1,0 +1,23 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    line-height: 1;
+    border-radius: .25rem;
+    font-size: .75rem;
+    padding: .25rem .5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    transition: color .3s, background-color .3s;
+    background: transparent;
+    border: 1px solid var(--color-border);
+    color: var(--color-muted)
+}
+
+.badge svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0 .5rem 0 -.25rem;
+    stroke-width: 1.5
+}
